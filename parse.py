@@ -48,7 +48,10 @@ def get_form_fields(infile):
 
 def main():
     from pprint import pprint
-    infilePath = "/Users/markallred/Desktop/SBA_test_apps/test1.pdf"
+    from pathlib import Path
+    test_loc_path = Path("C:/Users/mallred/Documents/software_projects/pdfParse/test_files")
+    infilePath = test_loc_path  / "mac_preview_edited.pdf"
+
     pprint(get_form_fields(infilePath))
 
 if __name__ == '__main__':
