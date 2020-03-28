@@ -50,7 +50,7 @@ def main():
     from pprint import pprint
     from pathlib import Path
     test_loc_path = Path("C:/Users/mallred/Documents/software_projects/pdfParse/test_files")
-    infilePath = test_loc_path  / "mac_preview_edited.pdf"
+    infilePath = test_loc_path  / "blank_form_1919.pdf"
 
     pprint(get_form_fields(infilePath))
 
